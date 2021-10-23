@@ -11,8 +11,6 @@ gem 'activerecord-session_store', '~> 2.0'
 gem 'bcrypt', '~> 3.1', '>= 3.1.16'
 # Boot large ruby/rails apps faster
 gem 'bootsnap', '~> 1.9', '>= 1.9.1', require: false
-# CoffeeScript adapter for the Rails asset pipeline
-gem 'coffee-rails', '~> 5.0'
 # Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.8'
 # High-level wrapper for processing images for the web with ImageMagick or libvips
@@ -25,10 +23,10 @@ gem 'puma', '~> 5.5', '>= 5.5.2'
 gem 'rails', '~> 6.1', '>= 6.1.4.1'
 # A Ruby client that tries to match Redis' API one-to-one
 gem 'redis', '~> 4.5', '>= 4.5.1'
-# Sass adapter for the Rails asset pipeline
-gem 'sass-rails', '~> 6.0'
 # TZInfo::Data contains data from the IANA Time Zone database
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+# Use webpack to manage app-like JavaScript modules in Rails
+gem 'webpacker', '~> 5.4', '>= 5.4.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
