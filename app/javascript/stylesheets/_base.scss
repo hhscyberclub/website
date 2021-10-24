@@ -1,0 +1,33 @@
+// Base styles
+
+@layer base {
+  // Main body
+  body {
+    @apply bg-white text-black dark:bg-gray-800 dark:text-gray-300;
+  }
+
+  // Headings
+  h1 {
+    @apply font-bold text-6xl;
+  }
+
+  h2 {
+    @apply font-bold text-5xl;
+  }
+
+  h3 {
+    @apply font-bold text-4xl;
+  }
+
+  h4 {
+    @apply font-semibold text-3xl;
+  }
+
+  h5 {
+    @apply font-semibold text-2xl;
+  }
+
+  h6 {
+    @apply font-medium text-xl;
+  }
+}

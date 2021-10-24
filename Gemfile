@@ -23,6 +23,8 @@ gem 'puma', '~> 5.5', '>= 5.5.2'
 gem 'rails', '~> 6.1', '>= 6.1.4.1'
 # A Ruby client that tries to match Redis' API one-to-one
 gem 'redis', '~> 4.5', '>= 4.5.1'
+# The speed of a single-page web application without having to write any JavaScript
+gem 'turbo-rails', '~> 7.1', '>= 7.1.1'
 # TZInfo::Data contains data from the IANA Time Zone database
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # Use webpack to manage app-like JavaScript modules in Rails
