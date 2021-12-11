@@ -13,6 +13,10 @@ gem 'bcrypt', '~> 3.1', '>= 3.1.16'
 gem 'bootsnap', '~> 1.9', '>= 1.9.1', require: false
 # Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.8'
+# Devise Async provides an easy way to configure Devise to send its emails asynchronously
+gem 'devise-async', '~> 1.0'
+# Autoload dotenv in Rails
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
 # High-level wrapper for processing images for the web with ImageMagick or libvips
 gem 'image_processing', '~> 1.12', '>= 1.12.1'
 # PG is the Ruby interface to the PostgreSQL RDBMS
@@ -23,8 +27,12 @@ gem 'puma', '~> 5.5', '>= 5.5.2'
 gem 'rails', '~> 6.1', '>= 6.1.4.1'
 # A Ruby client that tries to match Redis' API one-to-one
 gem 'redis', '~> 4.5', '>= 4.5.1'
+# Simple, efficient background processing for Ruby
+gem 'sidekiq', '~> 6.2', '>= 6.2.2'
+# A modest JavaScript framework for the HTML you already have
+gem 'stimulus-rails', '~> 0.7.1'
 # The speed of a single-page web application without having to write any JavaScript
-gem 'turbo-rails', '~> 7.1', '>= 7.1.1'
+gem 'turbo-rails', '~> 0.9.0'
 # TZInfo::Data contains data from the IANA Time Zone database
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # Use webpack to manage app-like JavaScript modules in Rails
@@ -40,6 +48,8 @@ group :development do
   gem 'annotate', '~> 3.1', '>= 3.1.1'
   # Provides a better error page for Rails and other Rack apps
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
+  # Provides the Binding#of_caller method
+  gem 'binding_of_caller', '~> 1.0'
   # The Listen gem listens to file modifications and notifies you about the changes
   gem 'listen', '~> 3.7'
   # RuboCop is a Ruby code style checking and code formatting tool

@@ -1,6 +1,57 @@
-<h1>Heading One</h1>
-<h2>Heading Two</h2>
-<h3>Heading Three</h3>
-<h4>Heading Four</h4>
-<h5>Heading Five</h5>
-<h6>Heading Six</h6>
+<div class="overflow-hidden relative">
+  <div class="max-w-7xl mx-auto">
+    <div class="pb-8 relative z-10 sm:pb-16 md:pb-20 lg:max-w-2xl lg:pb-28 lg:w-full xl:pb-32">
+      <svg class="absolute h-full hidden inset-y-0 right-0 text-white transform translate-x-1/2 w-48 dark:text-gray-800" fill="currentColor" preserveAspectRatio="none" aria-hidden="true">
+        <polygon points="50,0 100,0 50,100 0,100">
+      </svg>
+
+      <div>
+        <div class="pt-6 px-4 relative sm:px-6 lg:px-8">
+          <nav class="flex items-center justify-between relative sm:h-10 lg:justify-start" aria-label="Global">
+            <div class="flex flex-grow flex-shrink-0 items-center lg:flex-grow-0">
+              <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="<%= root_url %>">
+                  <span class="sr-only"><%= t('site_title') %></span>
+                  <%= image_pack_tag 'media/images/logo.svg', class: 'h-8 w-auto sm:h-10' %>
+                </a>
+                <div class="-mr-2 flex items-center md:hidden">
+                  <button class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500 hover:bg-gray-100 hover:text-gray-500" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+              <a class="font-medium text-gray-500 dark:hover:text-gray-400 hover:text-gray-900" href="/about">About</a>
+              <a class="font-medium text-gray-500 dark:hover:text-gray-400 hover:text-gray-900" href="/members">Members</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="absolute inset-x-0 origin-top-right p-2 transform transition md:hidden">
+          <div class="bg-white overflow-hidden ring-1 ring-black ring-opacity-5 rounded-lg shadow-md dark:bg-gray-800 dark:ring-white">
+            <div class="flex items-center justify-between pt-4 px-5">
+              <div>
+                <%= image_pack_tag 'media/images/logo.svg', alt: t('site_title'), class: 'h-8 w-auto' %>
+              </div>
+              <div class="-mr-2">
+                <button class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500 hover:bg-gray-100 hover:text-gray-500" type="button">
+                  <span class="sr-only">Close main menu</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="pb-3 pt-2 px-2 space-y-1">
+              <a class="block font-medium px-3 py-2 text-base text-gray-700 dark:hover:text-gray-500 hover:bg-gray-50 hover:text-gray-900" href="/about">About</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

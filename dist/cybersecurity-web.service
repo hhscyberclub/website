@@ -1,0 +1,18 @@
+[Unit]
+Description=The web server for HHS' Cyber Security Club
+After=network.target
+
+[Service]
+Type=simple
+User=cybersecurity
+WorkingDirectory=/home/cybersecurity/website
+Environment="RAILS_ENV=production"
+Environment="PORT=3000"
+Environment="LD_PRELOAD=libjemalloc.so"
+ExecStart=/home/cybersecurity/.rbenv/shims/bundle exec puma -C config/puma.rb
+ExecReload=/bin/kill -SIGUSR1 $MAINPID
+TimeoutSec=15
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

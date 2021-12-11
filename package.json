@@ -2,6 +2,7 @@
   "name": "cybersecurity",
   "private": true,
   "dependencies": {
+    "@hotwired/stimulus": "^3.0.1",
     "@hotwired/turbo-rails": "^7.0.1",
     "@rails/actioncable": "^6.1.4-1",
     "@rails/actiontext": "^6.1.4-1",

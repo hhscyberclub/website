@@ -1,0 +1,18 @@
+[Unit]
+Description=The Sidekiq server for HHS' Cyber Security Club
+After=network.target
+
+[Service]
+Type=simple
+User=cybersecurity
+WorkingDirectory=/home/cybersecurity/website
+Environment="RAILS_ENV=production"
+Environment="RAILS_MAX_THREADS=25"
+Environment="MALLOC_ARENA_MAX=2"
+Environment="LD_PRELOAD=libjemalloc.so"
+ExecStart=/home/cybersecurity/.rbenv/shims/bundle exec sidekiq -c 25
+TimeoutSec=15
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

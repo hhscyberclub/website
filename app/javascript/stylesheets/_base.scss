@@ -30,4 +30,10 @@
   h6 {
     @apply font-medium text-xl;
   }
+
+  .admin {
+    body {
+      @apply dark:bg-white;
+    }
+  }
 }

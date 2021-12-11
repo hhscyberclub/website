@@ -23,3 +23,11 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+/.env
+/.env.local
+/.env.development
+/.env.development.local
+/.env.production
+/.env.production.local
+/.env.test
+/.env.test.local

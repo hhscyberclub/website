@@ -1,0 +1,11 @@
+<% content_for :header_tags do %>
+  <meta name="turbo-root" content="/admin">
+
+  <%= javascript_pack_tag 'admin', 'data-turbo-track': 'reload' %>
+<% end %>
+
+<% content_for :content do %>
+  <%= yield %>
+<% end %>
+
+<%= render template: 'layouts/application' %>

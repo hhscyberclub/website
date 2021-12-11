@@ -37,5 +37,8 @@ module CyberSecurity
 
     # Don't generate stylesheets.
     config.generators.stylesheets = nil
+
+    # Use Sidekiq for Active Job adapter.
+    config.active_job.queue_adapter = :sidekiq
   end
 end
